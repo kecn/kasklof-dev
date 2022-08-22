@@ -6,8 +6,13 @@ import TechStack from "../components/TechStack.view";
 import Introduction from "../components/Introduction.view";
 
 const StartPage: FC = () => {
-  const [state, setState] = useState({ items: [<Introduction />] });
-  const [extraComponents] = useState([<Portrait />, <TechStack />]);
+  const [state, setState] = useState({
+    items: [<Introduction key="introduction" />],
+  });
+  const [extraComponents] = useState([
+    <Portrait key="portrait" />,
+    <TechStack key="tech-stack" />,
+  ]);
   const [count, setCount] = useState(0);
   const [hasMore, setHasMore] = useState(true);
 

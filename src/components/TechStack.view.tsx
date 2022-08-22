@@ -3,7 +3,7 @@ import { Box, Center, Stack, Text } from "@chakra-ui/react";
 
 const TechStack: FC = () => {
   return (
-    <Center h={"100vh"}>
+    <Center h={"75vh"}>
       <Box backgroundColor={"#FFF"}
         borderRadius="1rem"
         borderColor="purple.500"
